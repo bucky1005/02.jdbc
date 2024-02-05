@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import java.util.Scanner;
 import static com.ohgiraffers.common.JDBCTemplate.getConnection;
 
-/* 설명. PreparedStatement는 Streamt과 탈리 Placeholder(?)를 사용한 쿼리를 파싱하고
-    캐싱하여 다시 재해석 하는 과정을 생략암으로인해 불완전하게 작성된 쿼리 실행의 경우  Statement보다 빠르다. */
+/* 설명. PreparedStatement는 Streamt과 달리 위치홀더(Placeholder(?))를 사용한 쿼리를 파싱하고
+    캐싱하여 다시 재해석 하는 과정을 생략함으로인해 불완전하게 작성된 쿼리 실행의 경우  Statement보다 빠르다. */
 public class Application2 {
     public static void main(String[] args) {
 

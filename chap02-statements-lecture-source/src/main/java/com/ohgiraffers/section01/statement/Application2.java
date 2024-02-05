@@ -9,7 +9,7 @@ import java.util.Scanner;
 import static com.ohgiraffers.common.JDBCTemplate.close;
 import static com.ohgiraffers.common.JDBCTemplate.getConnection;
 
-/* 설명. 사번을 입력받아 한며으이 사원을 조회하는 기능 작성 */
+/* 설명. 사번을 입력받아 한명의 사원을 조회하는 기능 작성 */
 public class Application2 {
     public static void main(String[] args) {
         Connection con = getConnection();
