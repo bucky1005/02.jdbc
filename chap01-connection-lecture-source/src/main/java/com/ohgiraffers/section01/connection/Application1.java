@@ -28,7 +28,7 @@ public class Application1 {
                 /* 설명. connection 객체도 stream 이므로 close를 해줌
                     객체가 null을 가리키지 않거나 이미 닫힌 상태가 아니라면 close()실행
                  */
-                if(con != null || !con.isClosed()) con.close();
+                if(con != null && !con.isClosed()) con.close();
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
