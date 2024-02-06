@@ -30,7 +30,8 @@ public class MenuRepository {
             pstmt.setInt(2, modifyMenu.getMenuPrice());
             pstmt.setInt(3, modifyMenu.getMenuCode());
 
-            pstmt.executeUpdate();
+            result = pstmt.executeUpdate();
+            System.out.println("result = " + result);
 
         } catch (IOException e) {
             throw new RuntimeException(e);
